@@ -1,0 +1,12 @@
+<mat-accordion>
+ <app-episode *ngFor = "let episode of episodes" [episode]="episode"></app-episode>
+</mat-accordion>
+
+  <mat-paginator
+    [length]="count"
+    [pageSize]="20"
+    aria-label="Select page">
+  </mat-paginator>
+
+<!--<router-outlet></router-outlet>-->
+
