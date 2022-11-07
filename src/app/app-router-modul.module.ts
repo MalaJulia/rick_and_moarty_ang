@@ -5,9 +5,10 @@ import {MainlayoutComponent} from "./layout/mainlayout/mainlayout.component";
 
 let routes:Routes = [
   {path:'', component:MainlayoutComponent, children:[
-      {path:'episode', loadChildren:() => import('./modules/episode/episode.module').then(value => value.EpisodeModule)}
-    ]}
+      {path:'', redirectTo:'episodes', pathMatch:"full"},
+      {path:'episodes', loadChildren:() => import('./modules/episode/episode.module').then(value => value.EpisodeModule)}
 
+    ]}
 ]
 
 @NgModule({

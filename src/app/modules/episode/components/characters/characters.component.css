@@ -1,0 +1,5 @@
+.all-characters{
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+}

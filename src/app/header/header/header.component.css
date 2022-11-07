@@ -1,0 +1,12 @@
+.header{
+  background-color: #888888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.link{
+  text-decoration: none;
+  color: #24292e;
+  font-size: large;
+}

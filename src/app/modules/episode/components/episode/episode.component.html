@@ -1,7 +1,10 @@
-<div>
-  {{episode.name}}
-  {{episode.air_date}}
-  {{episode.episode}}
-  <a routerLink="{{episode.id}}"[state]="episode">>Episode details</a>
+<router-outlet></router-outlet>
+
+<div class="one-episode">
+  <h2>{{episode.name}}</h2>
+  <p>{{episode.air_date}}<p>
+  <p>{{episode.episode}}<p>
+  <a routerLink="characters" [queryParams]="{episode: episode.id}" class="link-details" >DETAILS</a>
+
 </div>
 

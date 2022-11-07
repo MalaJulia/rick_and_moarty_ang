@@ -8,6 +8,7 @@ import {MainlayoutComponent} from "./layout/mainlayout/mainlayout.component";
 import {HeaderComponent} from "./header/header/header.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {EpisodeModule} from "./modules/episode/episode.module";
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MainlayoutComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRouterModulModule,
-    BrowserAnimationsModule,
-    MatPaginatorModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRouterModulModule,
+        BrowserAnimationsModule,
+        MatPaginatorModule,
+        EpisodeModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

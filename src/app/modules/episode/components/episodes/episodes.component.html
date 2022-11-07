@@ -1,6 +1,9 @@
-<mat-accordion>
- <app-episode *ngFor = "let episode of episodes" [episode]="episode"></app-episode>
+<div class="all-episode">
+  <div class = 'episodes'>
+<mat-accordion class="mat-accordion">
+ <app-episode *ngFor = "let episode of episodes" [episode]="episode" class="episode"></app-episode>
 </mat-accordion>
+  </div>
 
   <mat-paginator
     [length]="count"
@@ -8,5 +11,4 @@
     aria-label="Select page">
   </mat-paginator>
 
-<!--<router-outlet></router-outlet>-->
-
+</div>

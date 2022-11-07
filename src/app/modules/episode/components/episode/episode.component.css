@@ -1,0 +1,28 @@
+/*.episodes {*/
+/*  display: flex;*/
+/*  justify-content:center;*/
+/*  align-items: center;*/
+/*  flex-direction:row;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+.one-episode{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+
+}
+h2{
+  width: 100%;
+  background-color: #888888;
+}
+.link-details{
+  width: 110px;
+  height: 60px;
+  text-decoration: none;
+  color: #24292e;
+  font-size: large;
+  border: solid 1px;
+  background-color: beige;
+}

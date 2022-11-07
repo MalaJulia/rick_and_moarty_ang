@@ -1,9 +1,9 @@
-import {ChangeDetectorRef, Component, Input, OnInit, ViewChild} from '@angular/core';
-import {IEpisode, IResult} from "../../interfaces";
-import {EpisodeService} from "../../services";
+import {ChangeDetectorRef, Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {map} from "rxjs";
 import {MatPaginator} from "@angular/material/paginator";
+
+import {IEpisode, IResult} from "../../interfaces";
 
 @Component({
   selector: 'app-episodes',
@@ -21,8 +21,7 @@ export class EpisodesComponent implements OnInit {
 
 
   constructor(private activatedRoute:ActivatedRoute, private router:Router, private detectorRef: ChangeDetectorRef){}
-  // (private episodeService: EpisodeService) {
-  // }
+
   ngAfterViewInit(): void {
     this.activatedRoute.queryParams.subscribe(({page}) => {
       this.paginator.pageIndex = page - 1
@@ -43,15 +42,6 @@ export class EpisodesComponent implements OnInit {
       console.log(value)
     })
 
-//     this.episodeService.getAll().subscribe(value => {
-//       console.log(value, 'vaallllll')
-//       return  this.episodes = value.results})
-// console.log(this.episodes)
-
-    //
-    // getEpisode(episode: IEpisode) {
-    //   this.selectedEpisode = episode
-    // }
 
   }
 

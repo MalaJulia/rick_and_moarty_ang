@@ -1,0 +1,28 @@
+.all-episode{
+  background-color: beige;
+  display: flex;
+  flex-direction:column;
+}
+
+.episodes{
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-accordion{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.episode{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: solid 1px;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  background-color: cadetblue;
+  border-radius: 20px;
+}
+

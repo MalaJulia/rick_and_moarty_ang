@@ -6,24 +6,29 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
 import { EpisodeComponent } from './components/episode/episode.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatPaginatorModule} from "@angular/material/paginator";
-import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
-// import {HeaderComponent} from "../../header/header/header.component";
+import { CharactersComponent } from './components/characters/characters.component';
+import { CharacterComponent } from './components/character/character.component';
 
 
 
 @NgModule({
-  declarations: [
-    EpisodesComponent,
-    EpisodeComponent,
-    EpisodeDetailsComponent,
-    // HeaderComponent,
+    declarations: [
+        EpisodesComponent,
+        EpisodeComponent,
+        CharactersComponent,
+        CharacterComponent,
 
-  ],
-  imports: [
-    CommonModule,
-    EpisodeRoutingModule,
-    MatExpansionModule,
-    MatPaginatorModule
-  ]
+
+    ],
+    exports: [
+        EpisodesComponent,
+        CharactersComponent
+    ],
+    imports: [
+        CommonModule,
+        EpisodeRoutingModule,
+        MatExpansionModule,
+        MatPaginatorModule
+    ]
 })
 export class EpisodeModule { }
